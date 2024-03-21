@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
-    
+    <title>Home</title>
     
 </head>
 <body>
     <header>
-        
-        <div class="menu">
-            
-            <div class="logo"><img id="imgLogo" src="/images/Logo_Barra_Menu (2).png" alt=""></div>
+		<button id="openMenu">&#9776;</button>
+		<nav id="menu">
+			<button id="closeMenu">X</button>
+            <a id="logo-link"> <img src="/images/Logo_Barra_Menu.png" alt="logo"></a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+        </div>
+			<div class="navigation">
+				<ul>
+					<li class="list ativo">
+						<a href="">
+							<span class="icon"><i class="bi bi-house-door-fill"></i></span>
+							<span class="text">Inicio</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="icon"><i class="bi bi-fingerprint"></i></span>
+							<span class="text">Usuário</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="icon"><i class="bi bi-buildings-fill"></i></span>
+							<span class="text">Empresas</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="">
+							<span class="icon"><i class="bi bi-piggy-bank-fill"></i></span>
+							<span class="text">Beneficiarios</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="/html/login.html">
+							<span class="icon"><i class="bi bi-person-fill"></i></span>
+							<span class="text">Acessar</span>
+						</a>
+					</li>
+					<div class="indicator"></div>
+				</ul>
+			</div> <!--naveção-->
+		</nav>
+	</header>
 
-            <nav class="Nav">
-
-                <ul class="menu_link">
-            
-                  <li class="link__Nav" id="linkCabeçalho">Pra Você</li>
-            
-                  <li class="link__Nav" id="linkCabeçalho"> Pra sua Empresa</li>
-            
-                  <li class="link__Nav" id="linkCabeçalho">Benefcíarios INSS</li>
-            
-                  <li class="link__Nav" id="linkCabeçalho">O que Procura</li>
-            
-                  <li class="link__Nav" id="linkCabeçalho">Acessar</li>
-            
-                </ul>
-            
-              </nav>
-            
         </div>
         <div class="banner"><img id="bannerHomepage" src="images/Sua casa própria em até 360 meses.png" alt="">
         </div>
-    </header>
+
     <main>
 
         <div class="section1">
@@ -126,32 +148,38 @@
             <div class="section3Container3">
                 <h2 class="Titulo_Section3_Cont3">Veja as Vantagens!</h2>
                 <ul class="Lista_Section3">
-                    <li class="Itens_Lista Section3">Contrate seu empréstimo 100% online:</li>
-                    <li class="Itens_Lista Section3">Acompanhe seus contratos ativos:</li>
-                    <li class="Itens_Lista Section3">Encontre nossos mais de 1.000 pontos de atendimento espalhados por todo o Brasil.</li>
+                    <li class="Itens_Lista-Section3">Contrate seu empréstimo 100% online:</li>
+                    <li class="Itens_Lista-Section3">Acompanhe seus contratos ativos:</li>
+                    <li class="Itens_Lista-Section3">Encontre nossos mais de 1.000 pontos de atendimento espalhados por todo o Brasil.</li>
                 </ul>
                 
             </div>
         </div>
 
     </main>
+    
     <footer class="footer-container">
+        <div class="itens-footer">
 		<div class="footer-section contato">
 			<h3>Contato</h3>
 			<p>E-mail: contato@exemplo.com</p>
 			<p>Telefone: (00) 1234-5678</p>
 			<p>Endereço: Rua Exemplo, 1234 - Brasil</p>
 		</div>
-		
-		<div class="footer-section links">
-			<h3>Links Úteis</h3>
-			<ul>
-				<li><a href="/layout.html">Página Inicial</a></li>
-				<li><a href="/html/Politica.html">Política de Privacidade</a></li>
-			</ul>
-		</div>
-		
-		<div class="footer-section redes-sociais">
+    </div>
+        
+    <div class="itens-footer">
+        <div class="footer-section-links">
+            <h3>Links Úteis</h3>
+            <ul>
+             <li><a href="/layout.html">Página Inicial</a></li>
+             <li><a href="/html/Politica.html">Política de Privacidade</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="itens-footer">
+        <div class="footer-section-redes-sociais">
 			<h3>Redes Sociais</h3>
 			<ul>
 				<li class="icon-footer"><a href="https://facebook.com/exemplo"><i class="bi bi-facebook"></i></a></li>
@@ -159,19 +187,23 @@
 				<li class="icon-footer"><a href="https://linkedin.com/exemplo"><i class="bi bi-linkedin"></i></a></li>
 			</ul>
 		</div>
-		
-		<div class="footer-section termos">
+    </div>
+    <div class="itens-footer">
+        <div class="footer-section-termos">
 			<h3>Termos e Condições</h3>
 			<p><a href="/html/Termos.html">Clique aqui para ler nossos termos e condições</a></p>
 		</div>
-		
-		<div class="footer-section copyright">
+    </div>
+    <div class="itens-footer">
+        <div class="footer-section-copyright">
 			<p>&copy; 2024 Credpay. Todos os direitos reservados.</p>
 		</div>
+    </div>
+	
 	</footer>
-	<script type="text/javascript" src="index.js"></script>
-  
 
-   
+
+	<script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>
