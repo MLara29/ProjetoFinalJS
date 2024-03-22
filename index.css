@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
@@ -274,7 +276,6 @@ main{
  width: 100%;
  height: 200px; 
  color: #292929;
- font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  position: relative;
  font-size: 20px;
  padding-top: 130px;
@@ -521,15 +522,25 @@ main{
 }
 
 footer{
+
     display: flex;
-    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 250px;
     font-size: 16px;
     background-color: #7533cb;
+    padding-left: 100px;
+    padding-right: 100px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .itens-footer{
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
 }
 
 .icon-footer {
@@ -537,16 +548,51 @@ footer{
     padding: 3px;
     align-items: center;
     justify-items: center;
+    border: 1px solid black;
 }
+.titulo-footer{
+    padding-bottom: 10px;
+}
+.texto-footer{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.footer-section-contato{
+    border: 1px solid black; 
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
 
+    
+}
 .footer-section-links {
-     margin-left: 25%;
+    
+    border: 1px solid black; 
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:center;
 }
-
+.footer-section-links ul{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    
+}
+.footer-section-links li{
+    width: 100%;
+    display: flex;
+    justify-content:right;
+    align-items: flex-start;
+}
 .footer-section-termos{
     margin-right: 30%;
 }
 
 .footer-section-copyright{
-margin-top: 18%;
+  margin-top: 18%;
+  border: 1px solid black;
 }
