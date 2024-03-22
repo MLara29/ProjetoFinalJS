@@ -21,13 +21,7 @@
 }
 
 
-body {
-	display: flex;
-    overflow-x: hidden;
-    flex-wrap: wrap;
-	flex: 1 1 100vw;
-	margin: 3px;
-}
+
 
 header, nav, main, aside, footer {
 	display: flex;
@@ -67,14 +61,6 @@ nav {
 nav a {
 	margin: 0 3%;
 	font-size: 15pt;
-}
-
-main {
-	flex: 20 1 500px;
-}
-
-aside {
-	flex: 1 1 200px;
 }
 
 footer {
@@ -145,15 +131,7 @@ li {
     z-index: 1;
 }
 
-a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-decoration: none;
-    position: relative;
-}
+
 
 .icon {
     display: block;
@@ -253,6 +231,9 @@ main{
     flex-direction: column;
     width: 70%;
     height: auto;
+    align-items: center;
+    
+   
 }
 
 .section1{
@@ -528,7 +509,7 @@ footer{
     justify-content: space-evenly;
     height: 250px;
     font-size: 16px;
-    background-color: #7533cb;
+    background-color: #2d0269;
     padding-left: 100px;
     padding-right: 100px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -538,17 +519,15 @@ footer{
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-
+    justify-content: right;
 }
 
 .icon-footer {
     font-size: 25px;
-    padding: 3px;
+    padding: 0px;
     align-items: center;
     justify-items: center;
-    border: 1px solid black;
+    
 }
 .titulo-footer{
     padding-bottom: 10px;
@@ -557,8 +536,13 @@ footer{
     font-size: 13px;
     padding-bottom: 10px;
 }
+.texto-footer a {
+    display: flex;
+    justify-items: flex-start;
+    justify-content: right;
+}
 .footer-section-contato{
-    border: 1px solid black; 
+    ; 
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -569,30 +553,31 @@ footer{
 }
 .footer-section-links {
     
-    border: 1px solid black; 
+    
     height: 200px;
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-start;
     justify-content:center;
 }
-.footer-section-links ul{
+.footer-section-redes-sociais{
+    
+    height: 200px;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 40px;
     
 }
-.footer-section-links li{
-    width: 100%;
+.icons-footer {
     display: flex;
-    justify-content:right;
-    align-items: flex-start;
-}
-.footer-section-termos{
-    margin-right: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
 }
 
 .footer-section-copyright{
-  margin-top: 18%;
-  border: 1px solid black;
+ margin-top: 40px;
+  
 }
