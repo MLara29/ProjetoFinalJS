@@ -98,41 +98,47 @@ ul {
 
 }
 
-
+.list{
+    
+    width: 100px;
+    height: 70;
+    
+}
 
 
 .icon {
     display: flex;
     align-items: center;
-    align-items: center;
-    line-height: 17px;
+    justify-content: center;
+    line-height: 12px;
     font-size: 27px;
     color: black;
     position: relative;
-    transition: transform .5s ease-in-out, color .5s ease-in-out;
+    transition: transform .3s ease-in-out, color .3s ease-in-out;
 }
 
 .text {
-    color: #7533cb;
+    color: black;
     position: absolute;
     opacity: 0;
-    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
     transform: translateY(20px);
     font-size: 18px;
     display: flex;
     align-items: center;
-    width: 100;
+    justify-content: center;
+    width: 100px;
     
 }
 
 li.ativo .icon {
-    transform: translateY(-25px);
-    color: #7533cb5b;
+    transform: translateY(-10px);
+    color: #5c04e0f6;
 }
 
 li.ativo .text {
     opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(5px);
     
 }
 
@@ -149,6 +155,7 @@ li.ativo .text {
 .navigation li{
     
     height: 20px;
+    
 
 }
 .navigation ul{
