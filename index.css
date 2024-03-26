@@ -22,13 +22,14 @@
 
 #logo-link {
 	display: flex;
-	height: 100px;
-    width: 250px;
+	height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 	align-items: center;
-    border: 1px solid black;
+    margin-top: 20px;
+    
 }
 
 
@@ -93,21 +94,19 @@ ul {
     width: 350px;
     display: flex;
     position: relative;
+    list-style-type: none;
+
 }
 
-li {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    z-index: 1;
-}
 
 
 
 .icon {
-    display: block;
-    line-height: 80px;
-    font-size: 40px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    line-height: 17px;
+    font-size: 27px;
     color: black;
     position: relative;
     transition: transform .5s ease-in-out, color .5s ease-in-out;
@@ -120,26 +119,49 @@ li {
     transition: opacity .5s ease-in-out, transform .5s ease-in-out;
     transform: translateY(20px);
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: 100;
+    
 }
 
 li.ativo .icon {
     transform: translateY(-25px);
-    color: #7533cb;
+    color: #7533cb5b;
 }
 
 li.ativo .text {
     opacity: 1;
     transform: translateY(10px);
+    
 }
 
 .indicator {
-    width: 80px;
-    height: 80px;
-    background-color: #e383ac;
+    width: 60px;
+    height: 60px;
+    background-color: #e383ad00;
     border-radius: 50%;
     position: absolute;
     top: -15px;
     transition: .5s;
+}
+
+.navigation li{
+    
+    height: 20px;
+
+}
+.navigation ul{
+
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+   
+    
+    
 }
 
 li:nth-child(1).ativo ~ .indicator {
@@ -193,14 +215,19 @@ body{
 }
 header{
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    
 }
 nav{
-    width: 100%;
-    height: 150px;
+    width: 80%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
 }
 main{
     display: flex;
@@ -212,13 +239,13 @@ main{
    
 }
 .navigation {
-    width: 500px;
+    width: 900px;
     height: 100px;
     background-color: white;
-    display: flex;
-   
+    display: flex; 
     justify-content: center;
-    border: 1px solid black;
+    align-items: center;
+   
 }
 
 .section1{
