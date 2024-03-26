@@ -563,7 +563,7 @@ footer{
     
 }
 .titulo-footer{
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 .texto-footer{
     font-size: 13px;
@@ -575,7 +575,7 @@ footer{
     justify-content: right;
 }
 .footer-section-contato{
-    ; 
+    
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -600,7 +600,7 @@ footer{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     
 }
 .icons-footer {
