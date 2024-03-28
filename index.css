@@ -8,16 +8,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-@media (max-width: 1024px) {
+@media only screen (max-width: 1024px) {
     .navigation {
         width: 400px;
         height: 100px;
-        background-color: white;
+        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
+
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -64,6 +65,8 @@ a {
 }
 
 @media only screen and (max-width: 717px) {
+
+
 	#openMenu, #closeMenu {
 		display: block;
         background-color: var(--color-gradient);
