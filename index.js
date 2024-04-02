@@ -47,16 +47,3 @@ for (let list of lists) {
     list.addEventListener('mouseenter', ativaMenu); 
 }
 
-//Desativa As redes do footer//
-window.onload = function() {
-	desativarLinks();
-};
-
-function desativarLinks() {
-	var links = document.querySelectorAll("ul li a[href^='https://facebook.com/exemplo'], ul li a[href^='https://twitter.com/exemplo'], ul li a[href^='https://linkedin.com/exemplo']");
-
-	links.forEach(function(link) {
-		link.removeAttribute("href");
-		link.style.pointerEvents = "none";
-	});
-}
