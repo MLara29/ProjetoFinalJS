@@ -58,40 +58,36 @@ a {
 }
 
 @media only screen and (max-width: 717px) {
-
-
-	#openMenu, #closeMenu {
-		display: block;
+    #openMenu, #closeMenu {
+        display: block;
         background-color: var(--color-gradient);
-	}
+    }
 
-	#openMenu {
-		margin-left: auto;
-	}
+    #openMenu {
+        margin-left: auto;
+    }
 
-	#closeMenu {
-		position: fixed;
-		right: 15px;
-		top: 15px;
-	}
+    #closeMenu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
 
-	nav {
-		position: fixed;
-		width: 100vw;
-		height: 100vh;
-		background: white;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-		display: none;
-		opacity: 0;
-		transition: 0.3s;
-	}
+    nav {
+        width: 100%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 0.3s;
+        display: flex; /* Alterado para flex */
+    }
 
-	nav a {
-		margin: 3%;
-	}
+    nav a {
+        margin: 3%;
+    }
 }
 
 
@@ -193,13 +189,6 @@ li:nth-child(5).ativo ~ .indicator {
     transform: translateX(calc(75px * 4));
 }
 
-.search-container {
-    position: absolute; 
-    top: 38px; 
-    left: 83%; 
-    z-index: 999;
-    
-}
 
 #search-input {
     padding: 8px 10px; 
@@ -642,6 +631,21 @@ footer{
         left:150px ;
     }
 
+    .search-results-container {
+        position: absolute;
+        border-radius: 5px;
+        top: 40px; 
+        left: 0;
+        width: 100%; 
+        border: 1px solid #6322b8; 
+        max-height: 200px; 
+        overflow-y: auto; 
+        padding: 5px; 
+        font-family: "Roboto", sans-serif;
+        background-color: white;
+    
+    }
+
     #logo-link {
         display: flex;
         height: 100%;
@@ -774,7 +778,7 @@ footer{
         font-weight: 500;
     }
 
-    #botao1Section2 {
+    #whatsappButton {
         background-color: white;
         width: 200px;
         height: 50px;
@@ -789,7 +793,7 @@ footer{
         font-weight: 500;
     }
 
-    #botao2Section2 {
+    #simulacaoButton {
         background-color: white;
         width: 200px;
         height: 50px;
@@ -876,3 +880,5 @@ footer{
         text-underline-offset: 0px;
     }
 }
+
+
