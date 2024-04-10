@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="/style/FGTS.css">
+    <link rel="stylesheet" href="/style/FGTS.css">
     <title>FGTS</title>
-
+    
 </head>
 <body>
     <header>
-		<button id="openMenu">&#9776;</button>
-
 		<nav id="menu">
-
-			<button id="closeMenu">X</button>
-
-            <a ><img id="logo-link" src="./images/Logo_Barra_Menu.png" alt="logo"></a>
+            <a ><img id="logo-link" src="/images/Logo_Barra_Menu (2).png" alt="logo"></a>
           
 			<div class="navigation">
 				<ul>
 					<li class="list ativo">
-						<a href="../index.html">
+						<a href="/index.html">
 							<span class="icon"><i class="bi bi-house-door-fill"></i></span>
 							<span class="text">Inicio</span>
 						</a>
@@ -60,22 +55,105 @@
 		</nav>
 	</header>
 
-    <section class="container">
-        <div class="img">
-            <img src="" alt="">
         </div>
-    </section>
+        <div class="banner"><img id="bannerHomepage" src="/images/Sua casa própria em até 360 meses.png" alt="">
+        </div>
+
+    <main>
+		<div class="form">
+            <form onsubmit="event.preventDefault(); CalcularFinanciamento()" class="form-container">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Simule aqui seu Financiamento</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="Emprestimo">Valor do empréstimo:</label>
+                        <input id="Emprestimo" type="number" name="Emprestimo" placeholder="R$" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Parcela">Quantidade de parcelas:</label>
+                        <input id="Parcela" type="number" name="Parcela" placeholder="Nº" required>
+                    </div>
+					
+        <div class="section1">
+            <div class="section1Contaier">
+                <div class="section1Titulo"><h1 class="TituloSection1">Tudo que você precisa para alcançar seus sonhos</h1></div>
+
+                <div class="ContainerCards">
+                    <div class="card" id="card1">
+                        <img id="img"  src="/images/imgs sectio2 (2).png" alt="">
+                        <p class="SubTitulo">Simule seu Financiamento</p>
+                        <p class="TextoCards">Faça agora a simulação do Seu Empréstimo na CredPay. Dinheiro Rápido, e com as melhores taxas do mercado!</p>
+                        <button class="botao"><a href="/html/FGTS.html">Simule Agora</a></button>
+                    </div>
+                    <div class="card" id="card2">
+                        <img id="img"  src="/images/card2.png" alt="">
+                        <p class="SubTitulo">Antecipe seu Beneficio</p>
+                        <p class="TextoCards">Antecipe seu Beneficio e receba no mesmo dia! Rápido e fácil!</p>
+                        <button class="botao">Antecipe Agora</button>
+                    </div>
+                    <div class="card" id="card3">
+                        <img id="img"  src="/images/Design sem nome - 2024-03-08T204840.599.png" alt="">
+                        <p class="SubTitulo">Emprestimo Consignado</p>
+                        <p class="TextoCards">Solicite seu Emprestimo e receba no mesmo dia! Rápido e fácil e sem consulta ao Serasa!</p>
+                        <button class="botao"><link rel="stylesheet" href="/html/Financ.html">Solicite Aqui</button>
+                    </div>
+                    <div class="card" id="card4">
+                        <img id="img"  src="/images/card4.png" alt="">
+                        <p class="SubTitulo">Solicite agora seu cartão</p>
+                        <p class="TextoCards">Solicite seu cartão Credpay. Rápido e fácil e sem consulta ao Serasa!</p>
+                        <button class="botao">Peça o seu Agora</button>
+                    </div>
+                </div>      
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="container_titulo_Sectio2">
+                <div class="titulo1_container1">
+                    <h2 id="Titulo_Section2">Fique por dentro das novidades do CredPay!</h2>
+                </div>
+                <div class="titulo2_container2"></div> 
+            </div>
+
+            <div class="ContainerSection2">
+                <div class="section2Container1">
+                    <img id="img1Sectio2" src="/images/img section2.png" alt="">
+                    <div class="textoSection2Cont1">
+                        <p id="texto_Section2_Container1">Agora você também pode entrar em contato com a gente pelo nosso perfil oficial no WhatsApp</p>
+                    </div>
+                    <button id="whatsappButton">Conheça nosso Whatsapp</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section3">
+            <div class="section3Container1">
+                <img id="img1Sectio3" src="/images/img1 section3.png" alt="">
+            </div>
+
+            <div class="section3Container2">
+               <img id="img2Sectio3" src="/images/img2 section3.png" alt=""> 
+               <h2 class="Titulo_Section3_Cont2">APP CREDPAY</h2>
+               <p class="texto_Section3_Cont2">Pelo novo App Credpay, você faz seu empréstimo 100% online, sem sair de casa. Tudo com muito mais comodidade e praticidade para o seu dia.</p>
+            </div>
+
+            <div class="section3Container3">
+                <h2 class="Titulo_Section3_Cont3">Veja as Vantagens!</h2>
+                <ul class="Lista_Section3">
+                    <li class="Itens_Lista-Section3">Contrate seu empréstimo 100% online:</li>
+                    <li class="Itens_Lista-Section3">Acompanhe seus contratos ativos:</li>
+                    <li class="Itens_Lista-Section3">Encontre nossos mais de 1.000 pontos de atendimento espalhados por todo o Brasil.</li>
+                </ul>    
+            </div>
+        </div>
+
+    </main>
     
-    <section class="container1">
-        <div class="form">
-            <label for="number">Informe seu saldo FGTS</label>
-            <input id="number" type="number" class="number" required>
-        </div>
-    </section>
-
-
-
-
     <footer class="footer-container">
 
         <div class="itens-footer">
@@ -91,9 +169,9 @@
 
         <div class="footer-section-links">
             <h3 class="titulo-footer">Links Úteis</h3>
-            <a class="texto-footer" href="/layout.html">Página Inicial</a>
+            <a class="texto-footer" href="/index.html">Página Inicial</a>
             <a class="texto-footer" href="/html/Politica.html">Política de Privacidade</a>
-            <a class="texto-footer" href="/html/Politica.html">Termos e Condições </a>   
+            <a class="texto-footer" href="/html/Termos.html">Termos e Condições </a>   
         </div>
       </div>
 
@@ -112,6 +190,7 @@
             </div>
      </div>       
 	</footer>
-    <script src="/javascript/FGTS.js"></script>
+
+	<script src="/javascript/FGTS.js"></script>
 </body>
 </html>
