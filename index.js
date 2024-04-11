@@ -16,11 +16,17 @@ for (let list of lists) {
     list.addEventListener('mouseenter', ativaMenu); 
 }
 
+// Redirecionar para o Simulador
 const simulacaoButton = document.getElementById('simulacaoButton');
 if (simulacaoButton) {
     simulacaoButton.addEventListener('click', redirecionarPagina);
 }
 
+function redirecionarPagina() {
+    window.location.href = "/html/Financ.html";
+}
+
+// Whatsapp
 function exibirPopUp() {
     alert("O WhatsApp está inativo no momento.");
 }
@@ -28,23 +34,25 @@ function exibirPopUp() {
 const whatsappButton = document.getElementById('whatsappButton');
 whatsappButton.addEventListener('click', exibirPopUp);
 
-function redirecionarPagina() {
-    window.location.href = "/html/Financ.html";
+
+function exibirPopUp() {
+    alert("O WhatsApp está inativo no momento.");
 }
 
+
+//Logica de pesquisa
 const elementos = [
-    { "tipo": "link", "texto": "Inicio", "url": "/inicio.html" },
+    { "tipo": "link", "texto": "Inicio", "url": "/index.html" },
     { "tipo": "link", "texto": "Usuário", "url": "/usuario.html" },
     { "tipo": "link", "texto": "Empresas", "url": "/empresas.html" },
     { "tipo": "link", "texto": "Beneficiarios", "url": "/beneficiarios.html" },
     { "tipo": "link", "texto": "Acessar", "url": "/html/Acessar.html" },
-    { "tipo": "link", "texto": "Página Inicial", "url": "/index.html" },
     { "tipo": "link", "texto": "Política de Privacidade", "url": "/html/Politica.html" },
     { "tipo": "link", "texto": "Termos e Condições", "url": "/html/Termos.html" },
-    { "tipo": "botao", "texto": "Solicite Agora", "funcao": redirecionarPagina, "id": "card1-button" },
-    { "tipo": "botao", "texto": "Antecipe Agora", "funcao": null, "id": "card2-button" },
-    { "tipo": "botao", "texto": "Solicite Aqui", "funcao": redirecionarPagina, "id": "card3-button" },
-    { "tipo": "botao", "texto": "Peça o seu Agora", "funcao": null, "id": "card4-button" }
+    { "tipo": "botao", "texto": "FGTS", "funcao": "redirecionarPagina('/html/fgts.html')", "id": "card1-button" },
+    { "tipo": "botao", "texto": "Antecipe seu Beneficio", "funcao": null, "id": "card2-button" },
+    { "tipo": "botao", "texto": "Emprestimo Consignado", "funcao": "redirecionarPagina('/html/emprestimo.html')", "id": "card3-button" },
+    { "tipo": "botao", "texto": "Solicite agora seu cartão", "funcao": null, "id": "card4-button" }
 ];
 
 const searchInput = document.getElementById('search-input');
@@ -77,13 +85,13 @@ searchInput.addEventListener('input', function(event) {
             resultItem.appendChild(anchor);
         } else if (elemento.tipo === 'botao') {
             const button = document.createElement('button');
-            button.textContent = ajustarTexto(elemento.texto); 
+            button.textContent = elemento.texto; 
             button.id = elemento.id;
             button.style.border = 'none'; 
             button.style.background = 'none'; 
             button.style.cursor = 'pointer'; 
             if (elemento.funcao) {
-                button.addEventListener('click', elemento.funcao);
+                button.addEventListener('click', function() { eval(elemento.funcao); });
             }
             resultItem.appendChild(button);
         }
@@ -96,22 +104,23 @@ searchInput.addEventListener('input', function(event) {
     }
 });
 
-function ajustarTexto(titulo) {
-    if (titulo.toLowerCase().includes('solicite aqui')) {
-        return 'Emprestimo consignado';
-    }
-    if (titulo.toLowerCase().includes('antecipe agora')) {
-        return 'Antecipe seu beneficio';
-    }
-    if (titulo.toLowerCase().includes('peça o seu agora')) {
-        return 'Solicite agora seu cartão';
-    }
-	if (titulo.toLowerCase().includes('solicite agora')) {
-        return 'FGTS';
-    }
-    return titulo;
-}
-
 localStorage.setItem('elementos', JSON.stringify(elementos));
 
 const elementosArmazenados = JSON.parse(localStorage.getItem('elementos'));
+
+function redirecionarPagina(url) {
+    window.location.href = url;
+}
+
+const style = document.createElement('style');
+style.textContent = `
+    .search-results-container {
+        font-family: "Roboto", sans-serif;
+        font-size: 15px; 
+    }
+    .search-result {
+        text-align: left; 
+        padding-left: 0; 
+    }`
+;
+document.head.append(style);
