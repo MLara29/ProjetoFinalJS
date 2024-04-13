@@ -3,18 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
 
 .roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-  
+
   .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -32,7 +30,6 @@
     margin-top: 20px;
     position: relative;
     left:0px ;
-    
 }
 
 a {
@@ -46,16 +43,12 @@ ul {
     display: flex;
     position: relative;
     list-style-type: none;
-
 }
 
 .list{
-    
     width: 100px;
     height: 70;
-    
 }
-
 
 .icon {
     display: flex;
@@ -79,7 +72,6 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100px;
-    
 }
 
 li.ativo .icon {
@@ -90,15 +82,12 @@ li.ativo .icon {
 li.ativo .text {
     opacity: 1;
     transform: translateY(5px);
-    
 }
 
-.navigation li{
-    
+.navigation li{   
     height: 20px;
-    
-
 }
+
 .navigation ul{
     display: flex;
     width: 800px;
@@ -124,7 +113,6 @@ li:nth-child(5).ativo ~ .indicator {
     transform: translateX(calc(75px * 4));
 }
 
-
 #search-input {
     padding: 8px 10px; 
     border: 1px solid #ccc; 
@@ -137,7 +125,6 @@ li:nth-child(5).ativo ~ .indicator {
     outline: none; 
     border-color: #7533cb; 
 }
-
 
 .form{
     font-family: "Roboto", sans-serif;
@@ -249,7 +236,6 @@ header{
     height: 100px;
     display: flex;
     flex-direction: row;
-    
 }
 nav{
     width: 80%;
@@ -257,8 +243,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    
 }
 main{
     display: flex;
@@ -266,9 +250,8 @@ main{
     width: 65%;
     height: auto;
     align-items: center;
-   
-   
 }
+
 .navigation {
     width: 900px;
     height: 100px;
@@ -276,7 +259,6 @@ main{
     display: flex; 
     justify-content: center;
     align-items: center;
-   
 }
 
 .section1{
@@ -287,9 +269,8 @@ main{
     height: 700px;
     margin-top: 200px;
     padding-bottom: 300px;
-    
-
 }
+
 .section1Contaier{
     display: flex;
     flex-direction: column;
@@ -297,8 +278,8 @@ main{
     height: 500px;
     width: 100%;
     padding-top: 100px;
-    
 }
+
 .section1Titulo{
  width: 100%;
  height: 200px; 
@@ -306,7 +287,6 @@ main{
  position: relative;
  font-size: 20px;
  margin-bottom: 90px;
- 
 }
 
 .ContainerCards{
@@ -314,8 +294,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     height: 500px;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .card-financ {
@@ -324,8 +303,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    
-    
 }
 
 #img{
@@ -341,15 +318,12 @@ main{
     padding-top: 10px;
     width: 100%;
     height: 40px;
-    
 }
 
 .TextoCards{
    color: rgb(126, 122, 122);
    height: 50px;
    margin-top: 20px;
-   
-   
 }   
 
 .botao{
@@ -370,7 +344,6 @@ main{
     width: 100%;
     justify-content: space-between;
     height: 350px;
-    
 }
 
 .container_titulo_Sectio2{
@@ -390,7 +363,6 @@ main{
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    
 }
 
 .section2Container1{
@@ -403,7 +375,6 @@ main{
     height: 250px;
     width: 570px;
     margin-right: 20px;
-
 }
 
 #img1Sectio2{
@@ -502,7 +473,6 @@ main{
 .section3Container3{
     width: 400px;
     height: 500px; 
-    
 }
 
 .Titulo_Section3_Cont2{
@@ -557,7 +527,6 @@ main{
 }
 
 footer{
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -583,7 +552,6 @@ footer{
     padding: 0px;
     align-items: center;
     justify-items: center;
-    
 }
 .titulo-footer{
     padding-bottom: 25px;
@@ -598,18 +566,13 @@ footer{
     justify-content: right;
 }
 .footer-section-contato{
-    
     height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
-
-    
 }
 .footer-section-links {
-    
-    
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -617,14 +580,12 @@ footer{
     justify-content:center;
 }
 .footer-section-redes-sociais{
-    
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     margin-bottom: 10px;
-    
 }
 .icons-footer {
     display: flex;
@@ -635,11 +596,9 @@ footer{
 
 .footer-section-copyright{
  margin-top: 40px;
-  
 }     
 
 @media screen and (max-width: 1366px) {
-
     .navigation {
         width: 500px;
         height: 100px;
@@ -648,8 +607,6 @@ footer{
         justify-content: center;
         align-items: center;
         padding-left: 150px;
-        
-       
     }
 
     .search-container {
@@ -671,7 +628,6 @@ footer{
         padding: 5px; 
         font-family: "Roboto", sans-serif;
         background-color: white;
-    
     }
 
     #logo-link {
@@ -684,9 +640,6 @@ footer{
         align-items: center;
         margin-top: 20px;
         position: relative;
-        
-        
-        
     }
 
     main {
@@ -698,7 +651,6 @@ footer{
     }
 
     /* Section 1*/
-
     .section1 {
         display: flex;
         align-items: center;
@@ -734,7 +686,6 @@ footer{
         border-top-left-radius: 40px;
     }
 
-  
     .SubTitulo {
         font-size: 18px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -751,7 +702,6 @@ footer{
     }
 
     /* Section 2*/
-
     #Titulo_Section2 {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 25px;
@@ -822,7 +772,6 @@ footer{
     }
 
      /* Section 3*/
-
     .section3Container1 {
         width: 300px;
         height: 500px;
