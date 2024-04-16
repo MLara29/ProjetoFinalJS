@@ -188,6 +188,14 @@ main{
     
     
 }
+
+.bi-arrow-left{
+    
+    color: #7533cb;
+    position: relative;
+    left:-140px ;
+    
+}
 #logo-header{
   width: 300px;
 }
@@ -209,23 +217,22 @@ main{
   height: 40px;
   border-color:#5A97A4 ;
   border-radius: 10px;
-  
+  padding-left: 10px;
 }
 
-#input-form ::value{
-    margin-left: 10px;
-}
+
 
 .contet-resultado{
-    width: 300px;
+    width: 400px;
     height: 0px;
     
     
 }
 #result{
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 10px;
     font-weight: 500;
+    color: #7533cb;
 }
 .botao-formulario{
     width: 100px;

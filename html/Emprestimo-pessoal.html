@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/Emprestimo-pessoal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Simulador Empréstimo Pessoal</title>
 </head>
 <body>
@@ -16,21 +18,27 @@
         <div class="container">
 
             <div class="header-container">
-                <img id="logo-header" src="/images/logo 500px.png" alt="">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <a href="../index.html"><path href="../index.html"  fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </a>
+                </svg>
+
+                <img id="logo-header"   src="/images/logo 500px.png" alt="">
             </div>
             
             <div class="formulario-container">
-                <div class="titulo-formulario"><p id="texto-titulo">Informe seu Nome</p></div>
-                <div class="input-formulario"><input type="text" id="input-form" placeholder=""></div>
+                <div  class="titulo-formulario"><p id="texto-titulo">Informe seu Nome</p></div>
+                <div class="input-formulario"><input type="text" class="input-form" id="input-form" placeholder=""></div>
                
                 <div class="botao-formulario">
-                    <button id="botao-form"><p id="texto-botao">Continuar</p></button>
+                    <button class="botao" id="botao-form"><p id="texto-botao">Continuar</p></button>
                 </div>
             </div>
-            <div class="informativo-container"><p id="texto-informativo">Informar o seu e-mail correto nos ajuda na análise e aprovação de crédito</p></div>
+            <div class="informativo-container"><p id="texto-informativo">Informar os seus dados corretamente nos ajuda na análise e aprovação de crédito</p></div>
 
             <div class="contet-resultado">
-                <p id="result"></p>
+                <p class="result" id="result"></p>
             </div>
         </div>
 
