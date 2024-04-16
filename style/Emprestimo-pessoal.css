@@ -137,6 +137,12 @@ li:nth-child(5).ativo ~ .indicator {
     outline: none; 
     border-color: #7533cb; 
 }
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
 nav{
     width: 100%;
     height: 75px;
