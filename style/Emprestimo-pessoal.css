@@ -160,7 +160,7 @@ main{
 .container-image{
     width: 1100px;
     height: 700px;
-    background-image: url(./../images/fundo\ simulador\ pessoal.png);
+    background-image: url(./../../images/fundo\ simulador\ pessoal.png);
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
