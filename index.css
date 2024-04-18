@@ -35,6 +35,7 @@
 a {
 	text-decoration: none;
 	color: inherit;
+    
 }
 
 ul {
@@ -245,6 +246,10 @@ main{
    height: 50px;
    margin-top: 20px;
 }   
+
+#botao-sec1{
+    width: 100%;
+}
 
 .botao{
     background-color: #6322b8; 

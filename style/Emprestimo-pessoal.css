@@ -137,12 +137,7 @@ li:nth-child(5).ativo ~ .indicator {
     outline: none; 
     border-color: #7533cb; 
 }
-header{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-}
+
 nav{
     width: 100%;
     height: 75px;
@@ -165,7 +160,7 @@ main{
 .container-image{
     width: 1100px;
     height: 700px;
-    background-image: url(/images/fundo\ simulador\ pessoal.png);
+    background-image: url(./../images/fundo\ simulador\ pessoal.png);
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
