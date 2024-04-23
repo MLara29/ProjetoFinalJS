@@ -236,6 +236,7 @@ header{
     height: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 nav{
     width: 80%;
