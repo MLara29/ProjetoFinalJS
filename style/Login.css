@@ -127,11 +127,11 @@ li:nth-child(5).ativo ~ .indicator {
 
 #search-input {
     padding: 8px 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
+    border: 2px solid  #9863dda6;
+    border-radius: 10px; 
     width: 200px; 
+    
 }
-
 
 #search-input:focus {
     outline: none; 
