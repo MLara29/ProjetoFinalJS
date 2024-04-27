@@ -12,8 +12,8 @@
     font-weight: 300;
     font-style: normal;
 }
-  
-.roboto-regular {
+
+  .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -29,14 +29,14 @@
 	align-items: center;
     margin-top: 20px;
     position: relative;
-    left:0px ;   
+    left:0px ;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
-    
 }
+
 
 ul {
     width: 350px;
@@ -71,7 +71,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;    
+    width: 100px;
 }
 
 li.ativo .icon {
@@ -84,17 +84,7 @@ li.ativo .text {
     transform: translateY(5px);
 }
 
-.indicator {
-    width: 60px;
-    height: 60px;
-    background-color: #e383ad00;
-    border-radius: 50%;
-    position: absolute;
-    top: -15px;
-    transition: .5s;
-}
-
-.navigation li{
+.navigation li{   
     height: 20px;
 }
 
@@ -104,7 +94,7 @@ li.ativo .text {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;    
+    height: 50px;
 }
 
 li:nth-child(1).ativo ~ .indicator {
@@ -123,7 +113,6 @@ li:nth-child(5).ativo ~ .indicator {
     transform: translateX(calc(75px * 4));
 }
 
-
 #search-input {
     padding: 8px 10px; 
     border: 2px solid  #9863dda6;
@@ -138,10 +127,84 @@ li:nth-child(5).ativo ~ .indicator {
     border-color: #7533cb; 
 }
 
+.form{
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    background-color: rgba(220, 220, 220, 0.233);
+}
 
-#bannerHomepage{
-    height: 100%;
-    width: 100%;
+.form-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 0.3rem;
+    background-color: #6322b8;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;  
+    margin-bottom: 0.8rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #6322b8;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #6322b83f;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6322b8;
+}
+
+.solicitar-button {
+    color: white;
+    width: 50%;
+    border: none;
+    background-color: #6322b8;
+    padding: 0.40rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem; 
+    display: flex; 
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.solicitar-button:hover {
+    background-color: #6322b83f;
 }
 
 body{
@@ -150,15 +213,13 @@ body{
     align-items: center;
 }
 header{
-
     width: 100%;
     height: 100px;
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
+    flex-direction: row;
+    justify-content: center;
 }
 nav{
-    
     width: 80%;
     height: 75px;
     display: flex;
@@ -179,7 +240,7 @@ main{
     background-color: white;
     display: flex; 
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
 .section1{
@@ -198,7 +259,7 @@ main{
     justify-content: center;
     height: 500px;
     width: 100%;
-    padding-top: 100px;    
+    padding-top: 100px;
 }
 
 .section1Titulo{
@@ -207,7 +268,7 @@ main{
  color: #292929;
  position: relative;
  font-size: 20px;
- margin-bottom: 90px; 
+ margin-bottom: 90px;
 }
 
 .ContainerCards{
@@ -215,14 +276,12 @@ main{
     flex-direction: row;
     justify-content: space-between;
     height: 500px;
-    width: 100%;
+    width: 100%;  
 }
 
-.card{
+.card-financ {
     height: 500px;
     width: 270px;
-    display: flex;
-    flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -248,10 +307,6 @@ main{
    height: 50px;
    margin-top: 20px;
 }   
-
-#botao-sec1{
-    width: 100%;
-}
 
 .botao{
     background-color: #6322b8; 
@@ -341,9 +396,9 @@ main{
 
 #texto_Section2_Container2{
     position: relative;
-}
+ }
 
-#whatsappButton{
+#botao1Section2{
  background-color: #0E37F1;
  width: 230px;
  height: 50px;
@@ -356,11 +411,9 @@ main{
  color: white;
  font-size: 17px;
  font-weight: 600;
- cursor: pointer;
 }
 
-
-#simulacaoButton{
+#botao2Section2{
     background-color: white;
     width: 230px;
     height: 50px;
@@ -373,7 +426,6 @@ main{
     color: #0E37F1;
     font-size: 17px;
     font-weight: 600;
-    cursor: pointer;
 }
 
 .section3{
@@ -483,30 +535,25 @@ footer{
     align-items: center;
     justify-items: center;
 }
-
 .titulo-footer{
     padding-bottom: 25px;
 }
-
 .texto-footer{
     font-size: 13px;
     padding-bottom: 10px;
 }
-
 .texto-footer a {
     display: flex;
     justify-items: flex-start;
     justify-content: right;
 }
-
-.footer-section-contato{    
+.footer-section-contato{
     height: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
 }
-
 .footer-section-links {
     height: 200px;
     display: flex;
@@ -514,8 +561,7 @@ footer{
     align-items: flex-start;
     justify-content:center;
 }
-
-.footer-section-redes-sociais{    
+.footer-section-redes-sociais{
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -523,7 +569,6 @@ footer{
     align-items: center;
     margin-bottom: 10px;
 }
-
 .icons-footer {
     display: flex;
     flex-direction: row;
@@ -532,7 +577,7 @@ footer{
 }
 
 .footer-section-copyright{
- margin-top: 40px;  
+ margin-top: 40px;
 }     
 
 @media screen and (max-width: 1366px) {
@@ -607,7 +652,7 @@ footer{
         margin-bottom: 70px;
     }
 
-    .card {
+    .card-financ  {
         height: 500px;
         width: 210px;
         display: flex;
@@ -623,7 +668,6 @@ footer{
         border-top-left-radius: 40px;
     }
 
-  
     .SubTitulo {
         font-size: 18px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -632,7 +676,6 @@ footer{
         width: 100%;
         height: 40px;
     }
-
     .TextoCards {
         color: rgb(126, 122, 122);
         height: 50px;
@@ -710,21 +753,6 @@ footer{
         font-weight: 500;
     }
 
-    #simulacaoButton {
-        background-color: white;
-        width: 200px;
-        height: 50px;
-        border-radius: 10px;
-        border-style: none;
-        position: relative;
-        bottom: 180px;
-        left: 25px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        color: #0E37F1;
-        font-size: 15px;
-        font-weight: 600;
-    }
-
      /* Section 3*/
     .section3Container1 {
         width: 300px;
@@ -732,7 +760,6 @@ footer{
         display: flex;
         justify-content: center;
     }
-    
     #img1Sectio3{
         width: 350px;
         height: 400px;
@@ -796,6 +823,13 @@ footer{
         padding-bottom: 0px;
         text-underline-offset: 0px;
     }
+
+    .container {
+        width: 90%;
+        height: auto;
+    }
 }
+
+
 
 

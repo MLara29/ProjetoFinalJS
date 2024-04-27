@@ -55,17 +55,17 @@ document.querySelector('.simulador-button').addEventListener('click', simular);
 
 //Logica de pesquisa
 const elementos = [
-    { "tipo": "link", "texto": "Inicio", "url": "/index.html" },
-    { "tipo": "link", "texto": "Usuário", "url": "/usuario.html" },
-    { "tipo": "link", "texto": "Empresas", "url": "/empresas.html" },
-    { "tipo": "link", "texto": "Beneficiarios", "url": "/beneficiarios.html" },
-    { "tipo": "link", "texto": "Acessar", "url": "/html/Acessar.html" },
-    { "tipo": "link", "texto": "Política de Privacidade", "url": "/html/Politica.html" },
-    { "tipo": "link", "texto": "Termos e Condições", "url": "/html/Termos.html" },
-    { "tipo": "botao", "texto": "Financiamento", "funcao": "redirecionarPagina('/html/Financ.html')", "id": "card1-button" },
-    { "tipo": "botao", "texto": "Antecipe seu Beneficio", "funcao": null, "id": "card2-button" },
-    { "tipo": "botao", "texto": "Emprestimo Consignado", "funcao": "redirecionarPagina('/html/emprestimo.html')", "id": "card3-button" },
-    { "tipo": "botao", "texto": "Solicite agora seu cartão", "funcao": null, "id": "card4-button" }
+    { "tipo": "link", "texto": "Inicio", "url": "../index.html" },
+    { "tipo": "link", "texto": "Usuário", "url": "../html/Login.html" },
+    { "tipo": "link", "texto": "Empresas", "url": "../html/empresas.html" },
+    { "tipo": "link", "texto": "Beneficiarios", "url": "../html/beneficiarios.html" },
+    { "tipo": "link", "texto": "Acessar", "url": "../html/Acessar.html" },
+    { "tipo": "link", "texto": "Política de Privacidade", "url": "../html/Politica.html" },
+    { "tipo": "link", "texto": "Termos e Condições", "url": "../html/Termos.html" },
+    { "tipo": "botao", "texto": "FGTS", "funcao": "redirecionarPagina('#')", "id": "card1-button" },
+    { "tipo": "botao", "texto": "Emprestimo Pessoal", "funcao": "redirecionarPagina('../html/Emprestimo-pessoal.html')", "id": "card2-button" },
+    { "tipo": "botao", "texto": "Emprestimo Consignado", "funcao": "redirecionarPagina('../html/emprestimo.html')", "id": "card3-button" },
+    { "tipo": "botao", "texto": "Solicite agora seu cartão", "funcao": "redirecionarPagina('../html/cartao.html')", "id": "card4-button" }
 ];
 
 const searchInput = document.getElementById('search-input');

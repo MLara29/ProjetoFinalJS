@@ -1,4 +1,4 @@
-// menu barra de NAV
+// menu barra de NAV//
 const lists = document.querySelectorAll('.list');
 const indicator = document.querySelector('.indicator');
 
@@ -16,81 +16,6 @@ for (let list of lists) {
     list.addEventListener('mouseenter', ativaMenu); 
 }
 
-// Whatsapp
-function exibirPopUp() {
-    alert("O WhatsApp está inativo no momento.");
-}
-
-const whatsappButton = document.getElementById('whatsappButton');
-whatsappButton.addEventListener('click', exibirPopUp);
-
-// Logica de financiamento
-function simularFinanciamento() {
-    const emprestimo = parseFloat(document.getElementById("Emprestimo").value);
-    const parcelas = parseInt(document.getElementById("Parcela").value);
-    const entrada = parseFloat(document.getElementById("Entrada").value);
-    const emprestimoFinal = emprestimo - entrada;
-
-    let taxa;
-    const tipoCreditoImobiliario = document.getElementById("Imobiliario").checked;
-    if (tipoCreditoImobiliario) {
-        taxa = 0.85; 
-    } else {
-        taxa = 1.5; 
-    }
-
-   
-    const resultado = calcularPrestacoes(emprestimoFinal, taxa, parcelas);
-
-    exibirResultadoModal(resultado);
-}
-
-function exibirResultadoModal(resultado) {
-    const tabelaResultado = document.getElementById("tabelaResultado").getElementsByTagName('tbody')[0];
-    tabelaResultado.innerHTML = "";
-
-    resultado.forEach((item, index) => {
-        const newRowHTML = `
-            <tr>
-                <td>${index + 1}</td>
-                <td>${item.prestacao.toFixed(2)}</td>
-                <td>${item.juros.toFixed(2)}</td>
-                <td>${item.amortizacao.toFixed(2)}</td>
-                <td>${item.saldoDevedor.toFixed(2)}</td>
-            </tr>
-        `;
-        tabelaResultado.insertAdjacentHTML('beforeend', newRowHTML);
-    });
-
-    $('#modalFinanciamento').modal('show');
-}
-
-function calcularPrestacoes(emprestimoFinal, taxa, parcelas) {
-    taxa = taxa / 100;
-
-    let prestacoes = [];
-
-    let prestacao = (emprestimoFinal * taxa) / (1 - Math.pow(1 + taxa, -parcelas));
-
-    for (let i = 0; i < parcelas; i++) {
-        let juros = emprestimoFinal * taxa;
-        let amortizacao = prestacao - juros;
-
-        prestacoes.push({
-            prestacao: prestacao,
-            juros: juros,
-            amortizacao: amortizacao,
-            saldoDevedor: emprestimoFinal - amortizacao
-        });
-
-        emprestimoFinal -= amortizacao;
-    }
-
-    return prestacoes;
-}
-
-document.querySelector('.simulador-button').addEventListener('click', simularFinanciamento);
-
 //Logica de pesquisa
 const elementos = [
     { "tipo": "link", "texto": "Inicio", "url": "../index.html" },
@@ -98,7 +23,7 @@ const elementos = [
     { "tipo": "link", "texto": "Empresas", "url": "../html/empresas.html" },
     { "tipo": "link", "texto": "Beneficiarios", "url": "../html/beneficiarios.html" },
     { "tipo": "link", "texto": "Acessar", "url": "../html/Acessar.html" },
-    { "tipo": "link", "texto": "Política de Privacidade", "url": "../html/Politica.html" },
+    { "tipo": "link", "texto": "Política de Privacidade", "url": "#" },
     { "tipo": "link", "texto": "Termos e Condições", "url": "../html/Termos.html" },
     { "tipo": "botao", "texto": "FGTS", "funcao": "redirecionarPagina('../html/fgts.html')", "id": "card1-button" },
     { "tipo": "botao", "texto": "Emprestimo Pessoal", "funcao": "redirecionarPagina('../html/Emprestimo-pessoal.html')", "id": "card2-button" },
@@ -175,7 +100,3 @@ style.textContent = `
     }`
 ;
 document.head.append(style);
-
-
-
-
